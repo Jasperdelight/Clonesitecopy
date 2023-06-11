@@ -1,0 +1,94 @@
+:root {
+  --main-color: #4c5440;
+  --dark-color: #172118;
+  --purple-color: #321981;
+  --highlight-color: #be0040;
+  --light-color: #da8d9b;
+  --grey-color: #b5a0a7;
+  --dark-grey-color: #3e3e3e;
+  --gameboy-color: #d8bebc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* SECTION COLORS */
+
+.bg-color-gameboy {
+  background-color: var(--gameboy-color);
+}
+
+.bg-color-dark-grey {
+  background-color: var(--dark-grey-color);
+}
+
+.bg-color-dark {
+  background-color: var(--dark-color);
+}
+
+.bg-color-purple {
+  background-color: var(--purple-color);
+}
+
+.bg-color-main {
+  background-color: var(--main-color);
+}
+
+.bg-color-highlight {
+  background-color: var(--highlight-color)
+}
+
+.bg-color-light {
+  background-color: var(--light-color);
+}
+
+.bg-color-grey {
+  background-color: var(--grey-color);
+}
+
+/* SECTION IMAGE/CARD  */
+
+.hero-img {
+  background-image: url(https://media.istockphoto.com/id/915097804/photo/black-brick-wall-background-texture-dark-masonry.webp?b=1&s=170667a&w=0&k=20&c=prAD9aAyMUzFFJVRV-HUrCQE_YsUqsd8tXFobg8n-eY=);
+}
+
+.contact-card {
+  position: absolute;
+  top: 20%;
+  right: 35%;
+}
+
+.hero-card {
+  display: contents;
+}
+
+.font-main {
+  font-family: 'Kanit', sans-serif;
+}
+
+.message-input {
+  height: 5rem;
+}
+
+.round-border {
+  border-radius: 20%;
+}
+
+/* SECTION MEDIA RULES */
+
+@media (max-width: 768px) {
+
+  .contact-card {
+    position: static;
+    top: 50%;
+    right: 50%;
+    /* order: -1; */
+  }
+
+
+  .message-input {
+    height: 5rem;
+  }
+
+}

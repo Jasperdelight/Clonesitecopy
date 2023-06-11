@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LINKS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <script src="app.js"></script>
+
+  <title>Clone Site</title>
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
+
+  <!-- SECTION NAV BAR TOP -->
+  <header class="container-fluid bg-color-highlight sticky-top">
+    <section class="row text-light">
+      <div class="col-6 fs-3 font-main"><i class="mdi mdi-autorenew-off"></i> GameBoy Burners</div>
+
+      <!-- NAV BAR BUTTON -->
+      <div class="col-6 fs-3 font-main text-end">
+        <button class="btn btn-light" onclick="scrollBottom()"> Customer Reviews!</button>
+      </div>
+    </section>
+  </header>
+
+  <!-- SECTION HERO CARD WITH FORM-->
+  <main class="container-fluid">
+
+    <!--LEFT HERO CARD INPUT FORM  SIDE -->
+    <div class="row hero-img text-white">
+      <p class="col-12 my-0 pt-4 ps-4 pb-0">Get in Touch!</p>
+    </div>
+    <section class="row hero-img text-white">
+
+      <div class="col-12 col-md-4 ">
+        <div class=" bg-color-grey text-dark p-2 m-4 rounded">
+          <p> CONTACT US</p>
+
+          <!-- NAME INPUT -->
+          <div class="row d-flex justify-content-center p-1">
+            <input class="col-10 border-dark" type="text" placeholder="Name">
+          </div>
+
+          <!-- EMAIL INPUT -->
+          <div class="row d-flex justify-content-center p-1">
+            <input class="col-10 border-dark" type="text" placeholder="Email">
+          </div>
+
+          <!-- PHONE AND EMAIL INPUTS -->
+          <div class="row d-flex justify-content-center p-1">
+
+            <!-- PHONE INPUT -->
+            <input class="col-4 border-dark" type="text" placeholder="Phone">
+            <div class="col-2"></div>
+            <input class="col-4 border-dark" type="text" placeholder="EXT.">
+          </div>
+
+          <!-- MESSAGE INPUT -->
+          <div class="row d-flex justify-content-center p-1 ">
+            <textarea class="col-10 border-dark" name="Message" id="" placeholder="message" cols="1"
+              rows="3"></textarea>
+          </div>
+
+
+          <!-- Checkbox with Message -->
+          <div class="row p-2">
+            <input class="col-1" type="checkbox">
+            <div class="col-10">
+              <p class="fs-16">Subscribe for the latest BURNIN' News!!</p>
+            </div>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE HERO CALL TO ACTION -->
+      <div class="col-12 col-md-8 d-none d-md-block text-center my-4">
+        <p>GET RID OF THAT OLD BOY!</p>
+        <p class="border-start border-5 border-success py-1">Still have a retro handheld gaming device gathering dust in
+          your closet? WELL SEND IT HERE. We will take your old devices, working or not; then stuff into into a furnace
+          that is blazing at the temperature of the sun! In return we will send you a nice chinese
+          knockoff that comes preloaded with 100 games!! (90% of the games will be the same mario game) </p>
+        <p>SO WHAT ARE YOU
+          WAITING FOR?!?</p>
+
+        <!-- VIDEO -->
+        <video width="320" height="240" controls>
+          <source src="wow.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT INFO -->
+
+    <!--LEFT CONTACT INFO  -->
+    <section class="row bg-color-dark-grey text-light">
+      <div class="col-12 col-md-6 order-2 order-md-1 d-flex">
+        <div class="row">
+          <div class="col-12 fs-2">Licensed in DESTRUCTION</div>
+          <div class="col-12 fs-3">All Devices BURNT</div>
+          <div class="col-12 py-2">Is that burnt plastic you smell? No that's the smell of profits.
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO RIGHT FLOATING BAR -->
+      <div class="col-12 col-md-6 order-1 order-md-2 d-flex position-relative">
+        <div class="row bg-color-gameboy text-dark contact-card">
+          <div class="col-12 fs-3">
+            <i class="mdi mdi-controller"></i> OVER 100 games
+          </div>
+          <div class="col-12">
+            <i class="mdi mdi-controller-classic-outline"></i> No Swapping Pesky cartridges!
+          </div>
+          <div class="col-12"><i class="mdi mdi-light-switch-off"></i> 15 minute Battery Life!</div>
+          <div class="col-12"><i class="mdi mdi-racquetball"></i> Device Doubles as a Bouncy Ball!</div>
+          <div class="col-12"><i class="mdi mdi-calendar-week-begin-outline"></i> Get Yours Today!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT INFO-->
+
+    <!-- LEFT SIDE IMAGE-->
+    <section class="row bg-color-dark text-light">
+      <div class="col-12 col-md-4"> <img class="img-fluid"
+          src="https://images.unsplash.com/photo-1531390770335-d94a0dacd992?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fFZJREVPJTIwZ2FtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="placeholder"></div>
+
+      <!-- RIGHT SIDE LEARN MORE COLUMN -->
+      <div class="col-12 col-md-8">
+        <div class="row my-4 py-2">
+          <div class="col-12 fs-3 my-4"><i class="mdi mdi-checkbox-marked"></i> Old Useless Devices??</div>
+          <div class="col-12 fs-3">Broken, Dirty, Strinky?!</div>
+          <div class="col-12">No Problem! We specialize in taking your old devices and throwing them into a furnace. Why
+            bother restoring your old devices? There just gonna break again in a couple months again anyways. Let us
+            solve the problem, No E waste, No Junk collecting dust. Just the Cremated Ashes of your old favorite
+            handheld devices being processed into Kitty Litter.</div>
+          <div class="col-6"></div>
+          <button class="col-4 justify-content-center">Learn More</button>
+
+          <!-- animation spot -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTEMONIAL CARDS -->
+    <section class="row justify-content-center m-2 p-2">
+
+      <!-- CARD 1 -->
+      <div class="col-12 col-md-3 order-2 order-md-1 m-2 bg-color-light h-85">
+
+        <div class="text-center my-2">
+          <i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i>
+          <p class="m-2 m-2">THIS THING FLIES! I BOUNCED THIS BADBOY AND IT STILL HASN"T
+            CAME DOWN</p>
+          <p class="text-success">Florida Man</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-12 col-md-3 order-1 order-md-2 bg-color-light text-center">
+
+        <div class="">
+          <p class=" fs-1 "><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i>
+          </p>
+          <p class="">I LOVE my new unmarked handheld gaming device from china that doubles as a bouncy ball, And so
+            does my dog!! What a Wonderful Product</p>
+          <p class=" text-success">Anne Marrie III (True Customer)</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-12 col-md-3 order-3 m-2 p-2 bg-color-light h-85 text-center">
+        <div>
+          <i class="mdi mdi-star-half"></i>
+          <p class="">I thought this company burns old games onto a modern backup. Instead they just sent me this crappy
+            bouncy ball with a LED
+            light on it. Can i get my gba and game collection back please?</p>
+          <p class=" text-success">Stinky Man</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM SECTION -->
+    <section class="row bg-color-gameboy text-dark text-center">
+      <div class="col-12"> We are not responsible for any objects of sentimental value that gets destroyed in the
+        process.</div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-color-dark-grey text-white sticky-bottom">
+    <section class="row text-center">
+      <div class="col-12">
+
+        <!-- SCROLL TO TOP BUTTON -->
+        <button class="bg-color-highlight text-white rounded" onclick="scrollToTop()">Back to Top</button>
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>
