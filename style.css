@@ -61,10 +61,28 @@ html {
   background-color: var(--grey-color);
 }
 
+.border-color-highlight {
+  border-color: var(--highlight-color);
+  border-radius: 0;
+  border-style: solid;
+  border-top: 0rem;
+  border-bottom: 0rem;
+  border-right: 0rem;
+}
+
+.image-max {
+  max-height: 25rem;
+}
+
 /* SECTION IMAGE/CARD  */
 
 .hero-img {
   background-image: url(https://media.istockphoto.com/id/915097804/photo/black-brick-wall-background-texture-dark-masonry.webp?b=1&s=170667a&w=0&k=20&c=prAD9aAyMUzFFJVRV-HUrCQE_YsUqsd8tXFobg8n-eY=);
+}
+
+.customer-button {
+  max-height: 4rem;
+  max-width: 10rem;
 }
 
 .contact-card {
@@ -87,6 +105,13 @@ html {
 
 .round-border {
   border-radius: 20%;
+}
+
+#cbDark {
+  accent-color: var(--dark-color);
+  color: var(--dark-color);
+  background-color: var(--dark-color);
+
 }
 
 /* SECTION MEDIA RULES */

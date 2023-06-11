@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta>
 
 <head>
   <meta charset="UTF-8">
@@ -14,6 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
   <script src="app.js"></script>
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
 
   <title>Clone Site</title>
 </head>
@@ -44,8 +47,9 @@
       <div class="col-6 fs-3 font-main"><i class="mdi mdi-autorenew-off"></i> GameBoy Burners</div>
 
       <!-- NAV BAR BUTTON -->
-      <div class="col-6 fs-3 font-main text-end">
-        <button class="btn btn-light" onclick="scrollBottom()"> Customer Reviews!</button>
+      <div class="col-6 d-flex align-items-center justify-content-end font-main text-end">
+        <button class="fs-10 customer-button rounded bg-color-dark-grey text-white" onclick="scrollBottom()"> Customer
+          Reviews!</button>
       </div>
     </section>
   </header>
@@ -55,7 +59,8 @@
 
     <!--LEFT HERO CARD INPUT FORM  SIDE -->
     <div class="row hero-img text-white">
-      <p class="col-12 my-0 pt-4 ps-4 pb-0">Get in Touch!</p>
+
+      <p class="col-10 my-0 mx-2 pt-4 ps-4 pb-0 d-flex justify-content-start">Get in Touch!</p>
     </div>
     <section class="row hero-img text-white">
 
@@ -90,22 +95,24 @@
 
 
           <!-- Checkbox with Message -->
-          <div class="row p-2">
-            <input class="col-1" type="checkbox">
-            <div class="col-10">
-              <p class="fs-16">Subscribe for the latest BURNIN' News!!</p>
+          <div class="row d-flex justify-content-center p-1">
+            <input id="cbDark" class="col-1" type="checkbox">
+            <div class="col-9">
+              <p class="">Subscribe for the latest BURNIN' News!!
+              </p>
+              <button class="btn btn-dark">Submit</button>
             </div>
           </div>
 
           <!-- SUBMIT BUTTON -->
-          <button class="btn btn-primary">Submit</button>
         </div>
       </div>
 
       <!-- RIGHT SIDE HERO CALL TO ACTION -->
       <div class="col-12 col-md-8 d-none d-md-block text-center my-4">
         <p>GET RID OF THAT OLD BOY!</p>
-        <p class="border-start border-5 border-success py-1">Still have a retro handheld gaming device gathering dust in
+        <p class="border-5 border-color-highlight py-1 px-2">Still have a retro handheld gaming device gathering
+          dust in
           your closet? WELL SEND IT HERE. We will take your old devices, working or not; then stuff into into a furnace
           that is blazing at the temperature of the sun! In return we will send you a nice chinese
           knockoff that comes preloaded with 100 games!! (90% of the games will be the same mario game) </p>
@@ -113,8 +120,8 @@
           WAITING FOR?!?</p>
 
         <!-- VIDEO -->
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/LDU_Txk06tM" title="YouTube video player"
-          frameborder="0"
+        <iframe width="460" height="280" src="https://www.youtube-nocookie.com/embed/LDU_Txk06tM"
+          title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
@@ -126,9 +133,9 @@
     <section class="row bg-color-dark-grey text-light">
       <div class="col-12 col-md-6 order-2 order-md-1 d-flex">
         <div class="row">
-          <div class="col-12 fs-2">Licensed in DESTRUCTION</div>
-          <div class="col-12 fs-3">All Devices BURNT</div>
-          <div class="col-12 py-2">Is that burnt plastic you smell? No that's the smell of profits.
+          <div class="col-12 fs-2 font-main">Licensed in DESTRUCTION</div>
+          <div class="col-12 fs-3 font-main">All Devices BURNT</div>
+          <div class="col-12 py-2 font-main">Is that burnt plastic you smell? No that's the smell of profits.
           </div>
         </div>
       </div>
@@ -153,7 +160,7 @@
 
     <!-- LEFT SIDE IMAGE-->
     <section class="row bg-color-dark text-light">
-      <div class="col-12 col-md-4"> <img class="img-fluid"
+      <div class="col-12 col-md-4"> <img class="img-fluid image-max"
           src="https://images.unsplash.com/photo-1531390770335-d94a0dacd992?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fFZJREVPJTIwZ2FtZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="placeholder"></div>
 
@@ -167,17 +174,17 @@
             solve the problem, No E waste, No Junk collecting dust. Just the Cremated Ashes of your old favorite
             handheld devices being processed into Kitty Litter.</div>
           <div class="col-6"></div>
-          <button class="col-4 justify-content-center">Learn More</button>
+          <button class="col-4 justify-content-center bg-color-light rounded">Learn More</button>
 
           <!-- animation spot -->
-          <div class="circle"></div>
+          <div class="circle rounded"></div>
     </section>
 
     <!-- TESTEMONIAL CARDS -->
     <section class="row justify-content-center m-2 p-2">
 
       <!-- CARD 1 -->
-      <div class="col-12 col-md-3 order-2 order-md-1 m-2 bg-color-light h-85">
+      <div class="col-12 col-md-3 order-2 order-md-1 m-2 bg-color-light h-85 rounded ">
 
         <div class="text-center my-2">
           <i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i>
@@ -188,7 +195,7 @@
       </div>
 
       <!-- CARD 2 -->
-      <div class="col-12 col-md-3 order-1 order-md-2 bg-color-light text-center">
+      <div class="col-12 col-md-3 order-1 order-md-2 bg-color-light text-center rounded">
 
         <div class="">
           <p class=" fs-1 "><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i>
@@ -200,7 +207,7 @@
       </div>
 
       <!-- CARD 3 -->
-      <div class="col-12 col-md-3 order-3 m-2 p-2 bg-color-light h-85 text-center">
+      <div class="col-12 col-md-3 order-3 m-2 p-2 bg-color-light h-85 text-center rounded">
         <div>
           <i class="mdi mdi-star-half"></i>
           <p class="">I thought this company burns old games onto a modern backup. Instead they just sent me this crappy
